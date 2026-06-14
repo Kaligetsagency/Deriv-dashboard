@@ -1,0 +1,70 @@
+body {
+  background-color: #0d1117; /* Dark mode aesthetic [cite: 37, 42] */
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.dashboard-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #161b22;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+.header-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+select {
+  padding: 12px;
+  background: #0d1117;
+  color: white;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.analyze-btn {
+  background-color: #0056b3; /* Neon-blue aesthetic [cite: 39] */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.analyze-btn:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+.error-toast {
+  color: #ff7b72;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.signal-card {
+  margin-top: 25px;
+  padding: 20px;
+  background: #21262d;
+  border-radius: 8px;
+  text-align: center;
+}
+.signal-buy { color: #3fb950; font-size: 24px; font-weight: bold; } /* BUY (Green) [cite: 13, 41] */
+.signal-sell { color: #f85149; font-size: 24px; font-weight: bold; } /* SELL (Red) [cite: 13] */
+.signal-hold { color: #e3b341; font-size: 24px; font-weight: bold; }
+
+.data-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.data-item {
+  background: #0d1117;
+  padding: 15px;
+  border-radius: 5px;
+  width: 30%;
+}
+.data-label { font-size: 12px; color: #8b949e; }
+.data-value { font-size: 18px; font-weight: bold; margin-top: 5px; color: white; }
